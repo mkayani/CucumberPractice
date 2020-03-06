@@ -1,4 +1,5 @@
 package stepDefinition;
+import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import dataProvider.LoginCredentials;
@@ -20,22 +21,19 @@ import java.util.concurrent.TimeUnit;
 public class Login extends LoginObjects {
 
 
-
-    public static WebDriver driver;
+    public static WebDriver driver = setUp();
     public static LoginCredentials loginCredentials = new LoginCredentials();
 
 
     LoginObjects objOfLogin = PageFactory.initElements(driver, LoginObjects.class);
 
 
-
-
-    @Before
-    public void setUp(){
+    public static WebDriver setUp(){
         System.setProperty("webdriver.chrome.driver","C:\\Users\\marya\\IdeaProjects\\CucumberPractice\\src\\test\\java\\Resources\\chromedriver_win32 (3)\\chromedriver_win32 (4)\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+        return driver;
     }
 
 
@@ -69,6 +67,7 @@ public class Login extends LoginObjects {
         objOfLogin.passwordSearchBox();
     }
 
+
     @When("^User clicks on the login button$")
     public void user_clicks_on_the_login_button() {
         driver.findElement(By.id("submit-button")).click();
@@ -82,6 +81,7 @@ public class Login extends LoginObjects {
         Assert.assertTrue(askQuestion.isDisplayed());
 
     }
+
 
 
 }

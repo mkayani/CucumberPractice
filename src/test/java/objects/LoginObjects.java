@@ -13,7 +13,7 @@ public class LoginObjects {
     public static LoginCredentials loginCredentials = new LoginCredentials();
 
 
-    @FindBy (id = "Log in")
+    @FindBy (partialLinkText = "Log in")
     private WebElement loginButton;
 
     @FindBy (id = "email")

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.358501">
-<testcase classname="Login into account" name="Log into account with correct details" time="0.358501">
-<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepDefinition.Login.user_Navigates_To_Stackoverflow_Website(Login.java:44)&#13;&#10;&#9;at ✽.Given User navigates to stackoverflow website(login.feature:6)&#13;&#10;"><![CDATA[Given User navigates to stackoverflow website...............................failed
-And User clicks on the login button on homepage.............................skipped
-And User enters valid username..............................................skipped
-And User enters valid password..............................................skipped
-When User clicks on the login button........................................skipped
-Then the user should be taken to the successful login page..................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at stepDefinition.Login.user_Navigates_To_Stackoverflow_Website(Login.java:44)
-	at ✽.Given User navigates to stackoverflow website(login.feature:6)
-]]></failure>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="25.427692">
+<testcase classname="Login into account" name="Log into account with correct details" time="25.427692">
+<system-out><![CDATA[Given User navigates to stackoverflow website...............................passed
+And User clicks on the login button on homepage.............................passed
+And User enters valid username..............................................passed
+And User enters valid password..............................................passed
+When User clicks on the login button........................................passed
+Then the user should be taken to the successful login page..................passed
+]]></system-out>
 </testcase>
 </testsuite>

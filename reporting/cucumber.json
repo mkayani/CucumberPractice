@@ -3,17 +3,6 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 10929706600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Login.setUp()"
-            }
-          }
-        ],
         "line": 5,
         "name": "Log into account with correct details",
         "description": "",
@@ -21,8 +10,9 @@
         "after": [
           {
             "result": {
-              "duration": 1019265200,
-              "status": "passed"
+              "duration": 160100,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinition.Login.tearDown(Login.java:38)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "status": "failed"
             },
             "match": {
               "location": "Login.tearDown()"
@@ -34,8 +24,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1991173900,
-              "status": "passed"
+              "duration": 358340500,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinition.Login.user_Navigates_To_Stackoverflow_Website(Login.java:44)\r\n\tat ✽.Given User navigates to stackoverflow website(login.feature:6)\r\n",
+              "status": "failed"
             },
             "line": 6,
             "name": "User navigates to stackoverflow website",
@@ -46,8 +37,7 @@
           },
           {
             "result": {
-              "duration": 2676482600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "User clicks on the login button on homepage",
@@ -58,8 +48,7 @@
           },
           {
             "result": {
-              "duration": 209757200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "User enters valid username",
@@ -70,8 +59,7 @@
           },
           {
             "result": {
-              "duration": 125429900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "User enters valid password",
@@ -82,8 +70,7 @@
           },
           {
             "result": {
-              "duration": 73935700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "User clicks on the login button",
@@ -94,8 +81,7 @@
           },
           {
             "result": {
-              "duration": 3200875600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "the user should be taken to the successful login page",
